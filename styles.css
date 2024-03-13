@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: Tilt Neon;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6A6A83;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    margin-bottom: 0;
+}
+
+.navigation-text{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.navigation-text a{
+    color: white;
+    padding-right: 25px;
+}
+
+.navigation-text a:hover{
+    color: rgb(70, 150, 52);
+    padding-right: 25px;
+}
+
+
+.icon{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 50%;
+    
+}
+
+.sun{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-color: rgb(205, 236, 225);
+    border-radius: 50%;
+}
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-text{
+    font-size: 15px;
+    margin-left: 200px;
+    flex-shrink: 0;
+}
+
+.main{
+    margin: 90px 170px;
+}
+
+.headers{
+    text-align: center;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+
+.sidebar{
+   padding: 0;
+   margin: 0;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   background-color: rgb(205, 236, 225);
+   top: 80px;
+   width: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 17px;
+   
+}
+
+.sidebar p{
+    margin-left: 2px;
+    color: #6A6A83;
+}
+
+.skills{
+    margin-top: 5px;
+}
+
+.skills-icons{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-top: 0px;
+}
+
+.mode{
+    background-color: #222;
+    color: #e6e6e6;
+}
+
+.black{
+    background-color: #85858a;
+}
+
+:root{
+    --primary-color:rgb(232, 232, 223);
+    --secondary-color:navy;
+}
+
+.dark-theme{
+    --primary-color: 	rgba(0, 0, 0, 0.853);
+    --secondary-color: #fff;
+}
+
+h3{
+    color: rgb(150, 52, 52);
+}
+
+.contact{
+    text-align: center;
+}
+
+.amazon, .bsu{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #6A6A83;
+}
+
+.chrome{
+    width: 150px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      
+    }
+
+    .main{
+        width: 500px;
+        font-size: 15px;
+    }
+
+    .intro{
+        margin-left: 0;
+    }
+
+    .intro-text{
+        margin-left: 0px;
+        flex-shrink: 0;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    body {
+      background-color: lightgreen;
+      
+    }
+
+    
+    .main{
+        width: 300px;
+        font-size: 15px;
+    }
+    .navigation-text{
+        width: 300px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+
+.experience a, .contact a, .details a{
+    color: rgb(150, 52, 52);
+}
+
+
+.experience a:hover, .contact a:hover, .details a:hover{
+    color: rgb(70, 150, 52);
+}

@@ -20,55 +20,78 @@
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Contact">Awards</a></li>
+                    <li><a href="#Contact">Activities</a></li>
+
+
                 </ul>
                 <img src="images/sun.png" alt="" class="sun">
         </div>
     <div class="main" id="About">
-        <div class="intro">
-            <div class="intro-text">
+        <div class="intro fixed-intro">
+            <div class="intro-text" id="introText">
                 <h3>HELLO 👋 MY NAME IS</h3>
                 <h3>Michael Acheampong</h3>
                 <h3>Welcome to my PAGE</h3>
                 <p><a href="images/Acheampong_Michael_2025.pdf" download="">Click here👉to download my RESUME</a></p>
             </div>
+            
             <div>
-                <img src="images/mypic.jpg" alt="" class="profile-pic" onclick="changeTheme()">
+                <img src="images/" alt="" class="profile-pic" onclick="changeTheme()">
             </div>
         </div>
+        
         <div>
-            <div>
-                <div class="about">
-                    <h3 class="headers">ABOUT</h3>
-                    <p>I am a self-motivated and ambitious individual who is constantly looking for methods and means to
-                        improve my talents, particularly in relation to my profession and future aspirations. I am also a cheerful
-                        individual who likes his work.</p>
-                </div>
+            <div class="about">
+    <h3 class="headers">ABOUT</h3>
+    <p>I am a self-motivated and ambitious individual who is constantly looking for methods and means to improve my talents, particularly in relation to my profession and future aspirations. I am also a cheerful individual who likes his work.</p>
+    <div class="read-more-container">
+        <button class="read-more-btn" onclick="toggleVisibility('more-about')">Read more</button>
+        <div id="more-about" class="more-content" style="display: none;">
+            <!-- Additional content to be shown when "Read more" is clicked -->
+            <p>This is additional content about myself. You can add more details here.</p>
+        </div>
+    </div>
+</div>
+
+                
                 <div class="experience">
                     <h3 class="experience-title headers">EXPERIENCE</h3>
                     <div> 
                         <h4><a href="https://bluefieldstate.edu/2022/07/28/project-success-internship-feature-b-state-student-michael-acheampong/"><img class="amazon" src="images/IT.jpg" alt="">IT Technician - Bluefield, WV May 2022 - Present</a></h4>
-                        <p> • Overseed the daily operation of computer systems, hardware and peripheral device maintenance</p>
-                        <p>• Facilitates troubleshooting of network connectivity and software issues encountered by students and over 
-                            employees with 100% user satisfaction
-                            </p> 
-                        <p>• Conduct needed installation for application software, operating systems, windows servers, and surveillance 
-                            software</p>
+                        <div class="read-more-container">
+                            <button class="read-more-btn" onclick="toggleVisibility('more-about-ITtech')">Read more</button>
+                            <div id="more-about-ITtech" class="more-content" style="display: none;">
+                                <!-- Additional content to be shown when "Read more" is clicked -->
+                                <p> • Overseed the daily operation of computer systems, hardware and peripheral device maintenance</p>
+                                <p>• Facilitates troubleshooting of network connectivity and software issues encountered by students and over employees with 100% user satisfaction</p> 
+                                <p>• Conduct needed installation for application software, operating systems, windows servers, and surveillance software</p>
+                            </div>
+                        </div>
                     </div>
                     <div> 
                         <h4><a href="https://www.amazon.jobs/"><img class="amazon" src="images/amazon.png" alt="">Amazon Software Engineer Intern - Austin, TX June 2023 – August 2023</a></h4>
+                        <div class="read-more-container">
+                            <button class="read-more-btn" onclick="toggleVisibility('more-about-amazon')">Read more</button>
+                            <div id="more-about-amazon" class="more-content" style="display: none;">
                         <p> • Created AWS Lambdas to perform ETL operations on business data by transferring data from S3 bucket to 
                             my team’s DynamoDB upon new file uploads resulting in 5% productivity increase.</p>
                         <p>• Generated comprehensive documentation for the entire AWS ETL process</p> 
                         <p>• Automated procedure for the STAR security team that relate business data from multiple data source.</p>
+                            </div>
                     </div>
                     <div>
-                        <h4><a href="https://bsuaa.org/"><img class="bsu" src="images/BSUAA.JPG" alt=""> Bluefield State Univeristy Alumni Website Webmaster</a></h4>
+                        <h4><a href="https://bsuaa.org/"><img class="bsu" src="images/BSUAA.JPG" alt=""> Bluefield State Univeristy Alumni Website Webmaster, January 2023 - Present</a></h4>
+                        <div class="read-more-container">
+                            <button class="read-more-btn" onclick="toggleVisibility('more-about-webmaster')">Read more</button>
+                            <div id="more-about-webmaster" class="more-content" style="display: none;">
                         <p>● Developed and maintained website with a focus on user experience, mobile responsiveness, and search engine 
                             optimization (SEO) with 20% increase in website’s visit.</p>
                             <p>● Implemented web analytics tools to monitor website traffic, user behavior, and conversion rates, and used the 
                                 insights to optimize website performance and drive business growth.</p>
                            <p>● Collaborated with my team to ensure timely and high-quality website updates and enhancements that aligned 
-                            with the university’s alumni branding and goals.</p>  
+                            with the university’s alumni branding and goals.</p>
+                            </div>  
                     </div>
                    
                 </div>
@@ -81,7 +104,7 @@
                     <p><img class="skills-icons" src="images/javascript-1.svg" alt="">JavaScript</p>
                     <p><img class="skills-icons" src="images/kotlin.png" alt="">Kotlin</p>
                     <p><img class="skills-icons" src="images/sql.png" alt="">SQL</p>
-                    <p><a href="https://github.com/Acheampongmichael"><img class="skills-icons" src="images/github.png" alt="">GitHub</a></p>
+                    <p><img class="skills-icons" src="images/github.png" alt="">GitHub</p>
                 </div>
                 <h3 class="headers" id="Projects">PROJECTS</h3>
                 <div class="details">

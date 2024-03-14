@@ -9,31 +9,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6A6A83;
+    background-color: blue;
+    background-image: linear-gradient(to right, rgb(57, 57, 135) , rgb(184, 91, 91));
     position: fixed;
     top: 0;
-    left: 0;
+    left: 150px;
     right: 0;
-    height: 80px;
+    height: 300px;
     margin-bottom: 0;
 }
 
 .navigation-text{
     display: flex;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 0px;
     font-size: 20px;
     flex-shrink: 0;
 }
 
 .navigation-text a{
-    color: white;
-    padding-right: 25px;
+    color: black;
+    padding-right: 65px;
 }
 
 .navigation-text a:hover{
-    color: rgb(70, 150, 52);
-    padding-right: 25px;
+    color: white;
 }
 
 
@@ -76,6 +76,22 @@ body{
     margin: 90px 170px;
 }
 
+
+.fixed-intro {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    right: 0px;
+    
+}
+
+.main {
+    margin-top: 300px; /* Adjust margin to accommodate the fixed intro */
+}
+
+
+
+
 .headers{
     text-align: center;
 }
@@ -92,8 +108,9 @@ body{
    position: fixed;
    left: 0;
    bottom: 0;
-   background-color: rgb(205, 236, 225);
-   top: 80px;
+   background-color: blue;
+   background-image: linear-gradient(to right, rgb(57, 57, 135) , rgb(184, 91, 91));
+   top: 0px;
    width: 150px;
    display: flex;
    flex-direction: column;
@@ -104,11 +121,17 @@ body{
 
 .sidebar p{
     margin-left: 2px;
-    color: #6A6A83;
+    color: white;
+}
+
+.sidebar a{
+    margin-left: 2px;
+    color: white;
 }
 
 .skills{
     margin-top: 5px;
+    color: black;
 }
 
 .skills-icons{
@@ -128,8 +151,9 @@ body{
 }
 
 :root{
-    --primary-color:rgb(232, 232, 223);
+    --primary-color:white;
     --secondary-color:navy;
+    
 }
 
 .dark-theme{
@@ -139,6 +163,10 @@ body{
 
 h3{
     color: rgb(150, 52, 52);
+}
+
+.intro-text h3, .intro-text a{
+    color: white;
 }
 
 .contact{
@@ -214,3 +242,40 @@ a{
 .experience a:hover, .contact a:hover, .details a:hover{
     color: rgb(70, 150, 52);
 }
+
+
+
+/* Add animation keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(100%); }
+}
+
+/* Apply animation to the intro text */
+.intro-text {
+    animation: fadeIn 3s forwards; /* Fade in from down */
+}
+
+.fade-out {
+    animation: fadeOut 3s forwards; /* Fade out to down */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

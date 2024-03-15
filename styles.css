@@ -15,7 +15,7 @@ body{
     top: 0;
     left: 150px;
     right: 0;
-    height: 300px;
+    height: 250px;
     margin-bottom: 0;
 }
 
@@ -96,7 +96,7 @@ body{
     text-align: center;
 }
 
-.details{
+.details,.youu{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;

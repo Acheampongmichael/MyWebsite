@@ -267,6 +267,31 @@ a{
 
 
 
+.read-more-container {
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background-color: #007bff; /* Use your preferred color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.more-content {
+    margin-top: 10px;
+}
+
+.more-content p {
+    margin-bottom: 10px;
+}
 
 
 
